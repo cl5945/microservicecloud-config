@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active:
+     - dev
+---
+
+
+spring:
+  profles: dev #开发环境
+  application:
+      name: microservicecloud-config-cl-dev
+---
+
+spring:
+  profiles: test  #测试环境
+  application:
+        name: microservicecloud-config-cl-test
+
+#请保存为UTF-8 的格式
