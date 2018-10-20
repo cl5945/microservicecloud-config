@@ -21,24 +21,24 @@ eureka:
    port: 8205
  
  spring:
-   profles: test1 #开发环境
+   profles: test #开发环境
    application:
        name: microservicecloud-config-client
  
  eureka:
    client: #客户端注册进eureka服务列表内
      service-url:
-       defaultZone: http://eureka-test1.com:7001/eureka/     
+       defaultZone: http://eureka-test.com:7001/eureka/     
 ---
 server:
   port: 8203
 
 spring:
-  profles: test2 #开发环境
+  profles: prod #开发环境
   application:
       name: microservicecloud-config-client
 
 eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
-      defaultZone: http://eureka-test2.com:7001/eureka/
+      defaultZone: http://eureka-prod.com:7001/eureka/
