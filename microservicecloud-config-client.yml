@@ -29,16 +29,3 @@ eureka:
    client: #客户端注册进eureka服务列表内
      service-url:
        defaultZone: http://eureka-test.com:7001/eureka/     
----
-server:
-  port: 8203
-
-spring:
-  profles: prod #开发环境
-  application:
-      name: microservicecloud-config-client
-
-eureka:
-  client: #客户端注册进eureka服务列表内
-    service-url:
-      defaultZone: http://eureka-prod.com:7001/eureka/
