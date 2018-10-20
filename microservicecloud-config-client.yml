@@ -3,7 +3,7 @@ spring:
     active: dev
 ---
 server:
-  port: 8204
+  port: 8201
 
 spring:
   profles: dev #开发环境
@@ -14,17 +14,16 @@ eureka:
   client: #客户端注册进eureka服务列表内
     service-url:
       defaultZone: http://eureka-dev.com:7001/eureka/
- 
- ---
- server:
-   port: 8205
- 
- spring:
-   profles: test #开发环境
-   application:
-       name: microservicecloud-config-client
- 
- eureka:
-   client: #客户端注册进eureka服务列表内
-     service-url:
-       defaultZone: http://eureka-test.com:7001/eureka/
+---
+server:
+  port: 8202
+
+spring:
+  profles: test #开发环境
+  application:
+      name: microservicecloud-config-client
+
+eureka:
+  client: #客户端注册进eureka服务列表内
+    service-url:
+      defaultZone: http://eureka-test.com:7001/eureka/
